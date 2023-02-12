@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#5370DA"
+        tools:context=".ui.cadastrarCliente.CadastrarClienteFragment">
+
+        <ImageView
+            android:id="@+id/imageViewcadcliente"
+            android:layout_width="151dp"
+            android:layout_height="139dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="255dp"
+            android:src="@drawable/ic_menu_camera"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.119" />
+
+        <Button
+            android:id="@+id/tirarftcliente"
+            android:layout_width="189dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/ciano"
+            android:text="Tirar Foto"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.78"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.24000001" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="352dp"
+            android:layout_marginBottom="442dp"
+            android:text="Nome"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewcadcliente" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="380dp"
+            android:text="CPF"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="35dp"
+            android:text="CNH"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="35dp"
+            android:text="Telefone"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="35dp"
+            android:text="Endereço"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+        <EditText
+            android:id="@+id/txtNome"
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="10dp"
+            android:ems="10"
+            android:hint="ex: João Silva"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:backgroundTint="@color/white"
+            android:textColorHint="@color/weakwhite"
+            app:layout_constraintBottom_toBottomOf="@+id/textView10"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/txtCPF"
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="10dp"
+            android:ems="10"
+            android:hint="ex: 000.000.000-00"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:backgroundTint="@color/white"
+            android:textColorHint="@color/weakwhite"
+            app:layout_constraintBottom_toBottomOf="@+id/textView11"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/txtCNH"
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="10dp"
+            android:ems="10"
+            android:hint="ex: 00000000000"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:backgroundTint="@color/white"
+            android:textColorHint="@color/weakwhite"
+            app:layout_constraintBottom_toBottomOf="@+id/textView12"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/txtTelefone"
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="10dp"
+            android:ems="10"
+            android:hint="ex: (00) 00000-0000"
+            android:inputType="phone"
+            android:minHeight="48dp"
+            android:backgroundTint="@color/white"
+            android:textColorHint="@color/weakwhite"
+            app:layout_constraintBottom_toBottomOf="@+id/textView13"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/txtEndereço"
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="10dp"
+            android:ems="10"
+            android:hint="ex: Rua xxx, Nº xxx"
+            android:inputType="textPostalAddress"
+            android:minHeight="48dp"
+            android:backgroundTint="@color/white"
+            android:textColorHint="@color/weakwhite"
+            app:layout_constraintBottom_toBottomOf="@+id/textView14"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/btnCadastrarCliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="123dp"
+            android:layout_marginTop="67dp"
+            android:layout_marginEnd="123dp"
+            android:backgroundTint="@color/ciano"
+            android:text="Cadastrar"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.9" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

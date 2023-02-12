@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#5370DA"
+        tools:context=".ui.alugarCarro.AlugarCarro">
+
+
+        <AutoCompleteTextView
+            android:id="@+id/acCliente"
+            android:layout_width="260dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/white"
+            android:completionThreshold="1"
+            android:ems="10"
+            android:hint="Ex: João Silva"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/weakwhite"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/tvModelo"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/total"
+            android:layout_width="260dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/white"
+            android:ems="10"
+            android:hint="Ex: R$ 2500,00"
+            android:inputType="number"
+            android:textColorHint="@color/weakwhite"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/tvValorDiaria"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <AutoCompleteTextView
+            android:id="@+id/acveiculo"
+            android:layout_width="260dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/white"
+            android:completionThreshold="1"
+            android:ems="10"
+            android:hint="Ex: Toyota"
+            android:inputType="textPersonName"
+            android:text=""
+            android:textColorHint="@color/weakwhite"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/tvMarca"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/btnSalvarAlugar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="123dp"
+            android:layout_marginTop="67dp"
+            android:layout_marginEnd="123dp"
+            android:backgroundTint="@color/ciano"
+            android:onClick="salvarVeiculo"
+            android:text="Salvar"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.489"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.951" />
+
+        <TextView
+            android:id="@+id/tvModelo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="380dp"
+            android:text="Cliente"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.332" />
+
+        <TextView
+            android:id="@+id/tvChassi"
+            android:layout_width="148dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="380dp"
+            android:text="Data devolução"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.615" />
+
+        <TextView
+            android:id="@+id/tvValorDiaria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="380dp"
+            android:text="Valor a pagar"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.771" />
+
+        <TextView
+            android:id="@+id/tvEspecificacoes"
+            android:layout_width="125dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="380dp"
+            android:text="Data retirada"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.472" />
+
+        <TextView
+            android:id="@+id/tvMarca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="352dp"
+            android:text="Veiculo"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.191" />
+
+        <EditText
+            android:id="@+id/dataRetirada"
+            android:layout_width="260dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="ex: 24/10/2022"
+            android:backgroundTint="@color/white"
+            android:inputType="date"
+            android:textColorHint="@color/weakwhite"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvEspecificacoes"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/dataDevolucao"
+            android:layout_width="241dp"
+            android:layout_height="61dp"
+            android:layout_marginEnd="10dp"
+            android:ems="10"
+            android:hint="ex: 30/10/2022"
+            android:backgroundTint="@color/white"
+            android:inputType="date"
+            android:textColorHint="@color/weakwhite"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvChassi"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="#5370DA"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.cadastrarVeiculo.CadastrarVeiculoFragment">
+
+        <ImageView
+            android:id="@+id/imageViewcadastrarveic"
+            android:layout_width="151dp"
+            android:layout_height="139dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="255dp"
+            android:contentDescription=""
+            android:src="@drawable/imgcarro"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.104" />
+
+        <AutoCompleteTextView
+            android:id="@+id/acModelo"
+            android:layout_width="260dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/white"
+            android:completionThreshold="1"
+            android:ems="10"
+            android:hint="Ex: Sedan"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/weakwhite"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/tvModelo"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/ptEspecCadVeic"
+            android:layout_width="260dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/white"
+            android:ems="10"
+            android:hint="Ex: 4 portas, AC"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/weakwhite"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/tvEspecificacoes"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/ptChassiCadVeic"
+            android:layout_width="260dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/white"
+            android:ems="10"
+            android:hint="Ex: 9BG116GW04C400001"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/weakwhite"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/tvChassi"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/total"
+            android:layout_width="260dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/white"
+            android:ems="10"
+            android:hint="Ex: R$ 25,00"
+            android:inputType="number"
+            android:textColorHint="@color/weakwhite"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/tvValorDiaria"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/ptPlacaCadVeic2"
+            android:layout_width="260dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/white"
+            android:ems="10"
+            android:hint="Ex: LSN4149"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/weakwhite"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/tvPlaca"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <AutoCompleteTextView
+            android:id="@+id/acMarca"
+            android:layout_width="260dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/white"
+            android:completionThreshold="1"
+            android:ems="10"
+            android:hint="Ex: Toyota"
+            android:inputType="textPersonName"
+            android:text=""
+            android:textColorHint="@color/weakwhite"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/tvMarca"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/btnTirarFotoCadVeic"
+            android:layout_width="189dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/ciano"
+            android:text="Tirar Foto"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:onClick="tirarFotoVeiculo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.855"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.239" />
+
+        <Button
+            android:id="@+id/btnSalvarAlugar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="123dp"
+            android:layout_marginTop="67dp"
+            android:layout_marginEnd="123dp"
+            android:backgroundTint="@color/ciano"
+            android:text="Salvar"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:onClick="salvarVeiculo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.49"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.975" />
+
+        <TextView
+            android:id="@+id/tvModelo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="380dp"
+            android:text="Modelo"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.047"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvMarca" />
+
+        <TextView
+            android:id="@+id/tvPlaca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="380dp"
+            android:text="Placa"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.03"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvChassi" />
+
+        <TextView
+            android:id="@+id/tvChassi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="380dp"
+            android:text="Chassi"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.036"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvEspecificacoes" />
+
+        <TextView
+            android:id="@+id/tvValorDiaria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="380dp"
+            android:text="Valor Diária"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.043"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvPlaca" />
+
+        <TextView
+            android:id="@+id/tvEspecificacoes"
+            android:layout_width="87dp"
+            android:layout_height="53dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="380dp"
+            android:text="Especifi-cações"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.037"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvModelo" />
+
+        <TextView
+            android:id="@+id/tvMarca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="352dp"
+            android:layout_marginBottom="442dp"
+            android:text="Marca"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.48"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewcadastrarveic"
+            app:layout_constraintVertical_bias="0.53" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

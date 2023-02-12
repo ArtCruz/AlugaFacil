@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/alugar_veiculo"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="@string/alugar_veiculo" />
+        <item
+            android:id="@+id/cadastrar_veiculo"
+            android:icon="@drawable/ic_baseline_directions_car_24"
+            android:title="@string/cadastrar_veículo" />
+        <item
+            android:id="@+id/cadastrar_cliente"
+            android:icon="@drawable/ic_baseline_group_add_24"
+            android:title="@string/cadastrar_cliente" />
+        <item
+            android:id="@+id/devolver_veiculo"
+            android:icon="@drawable/ic_baseline_remove_circle_outline_24"
+            android:title="@string/devolver_veículo" />
+        <item
+            android:id="@+id/ver_clientes"
+            android:icon="@drawable/ic_baseline_contacts_24"
+            android:title="@string/ver_clientes_cadastrados" />
+        <item
+            android:id="@+id/ver_veiculo"
+            android:icon="@drawable/ic_baseline_view_carousel_24"
+            android:title="@string/ver_veiculos_cadastrados" />
+    </group>
+</menu>

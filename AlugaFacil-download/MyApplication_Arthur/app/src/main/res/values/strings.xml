@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">MyApplication_Arthur</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="alugar_veiculo">Alugar Veiculo</string>
+    <string name="veiculo_nao_encontrado">Veículo Não Encontrado</string>
+    <string name="cliente_nao_encontrado">Cliente Não Encontrado</string>
+    <string name="cadastrar_veículo">Cadastrar Veiculo</string>
+    <string name="cadastrar_cliente">Cadastrar Cliente</string>
+    <string name="devolver_veículo">Devolver Veiculo</string>
+    <string name="ver_clientes_cadastrados">Ver Clientes Cadastrados</string>
+    <string name="ver_veiculos_cadastrados">Ver Veiculos Cadastrados</string>
+
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

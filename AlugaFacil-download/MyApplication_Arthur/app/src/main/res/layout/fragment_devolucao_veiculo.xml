@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.devolucaoVeiculo.DevolucaoVeiculoFragment"
+        android:background="#5370DA">
+
+        <AutoCompleteTextView
+            android:id="@+id/ptMarcaCadVeic2"
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/white"
+            android:completionThreshold="1"
+            android:ems="10"
+            android:hint="Ex: Toyota"
+            android:inputType="textPersonName"
+            android:text=""
+            android:textColorHint="@color/weakwhite"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/textView5"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/ptValorDiariaCadVeic2"
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/white"
+            android:ems="10"
+            android:hint="R$0,00"
+            android:inputType="text"
+            android:textColorHint="@color/weakwhite"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/tvValorDiaria2"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tvPlaca2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="35dp"
+            android:text="Data Devolução"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <TextView
+            android:id="@+id/tvValorDiaria2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="35dp"
+            android:text="Valor Total"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvPlaca2" />
+
+        <ImageView
+            android:id="@+id/imageViewcadastrarveic"
+            android:layout_width="151dp"
+            android:layout_height="139dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="255dp"
+            android:contentDescription=""
+            android:src="@drawable/imgcarro"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.065"
+            app:srcCompat="@drawable/ic_baseline_photo_camera_24" />
+
+        <EditText
+            android:id="@+id/etPlacaDevolVeicPersonName"
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="10dp"
+            android:ems="10"
+            android:hint="Ex: LSN14149"
+            android:inputType="textPersonName"
+            android:backgroundTint="@color/white"
+            android:textColorHint="@color/weakwhite"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/textView3"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="35dp"
+            android:text="Placa"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="352dp"
+            android:text="Marca"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.47"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewcadastrarveic" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="41dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="35dp"
+            android:text="Valor Adicional"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <EditText
+            android:id="@+id/etValorAdicionalDevolVeic"
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/white"
+            android:ems="10"
+            android:hint="Ex: R$20,00"
+            android:inputType="numberDecimal"
+            android:textColorHint="@color/weakwhite"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/textView4"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextDate"
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="10dp"
+            android:ems="10"
+            android:hint="Ex: 20/10/2022"
+            android:inputType="date"
+            android:backgroundTint="@color/white"
+            android:textColorHint="@color/weakwhite"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/tvPlaca2"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/btnDevolVeic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/ciano"
+            android:onClick="devolverVeiculo"
+            android:text="Devolver"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.135"
+            app:layout_constraintStart_toEndOf="@+id/etObservacaoDevolucao"
+            app:layout_constraintTop_toBottomOf="@+id/etObservacaoDevolucaoVeiculo"
+            app:layout_constraintVertical_bias="0.454" />
+
+        <TextView
+            android:id="@+id/etObservacaoDevolucao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="Observacao"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvValorDiaria2" />
+
+        <EditText
+            android:id="@+id/etObservacaoDevolucaoVeiculo"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="Ex: Sujo de Lama "
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textColorHint="@color/weakwhite"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toBottomOf="@+id/etObservacaoDevolucao"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ptValorDiariaCadVeic2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

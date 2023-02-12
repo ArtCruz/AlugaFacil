@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_alugar_veiculo_inicial">
+
+    <fragment
+        android:id="@+id/nav_cadastrar_veiculo"
+        android:name="com.example.myapplication_arthur.ui.cadastrarVeiculo.CadastrarVeiculoFragment"
+        android:label="@string/cadastrar_veículo"
+        tools:layout="@layout/fragment_cadastrar_veiculo" />
+    <fragment
+        android:id="@+id/nav_cadastrar_cliente"
+        android:name="com.example.myapplication_arthur.ui.cadastrarCliente.CadastrarClienteFragment"
+        android:label="@string/cadastrar_cliente"
+        tools:layout="@layout/fragment_cadastrar_cliente" />
+
+    <fragment
+        android:id="@+id/nav_devolucao_veiculo"
+        android:name="com.example.myapplication_arthur.ui.consultarDevolucaoVeiculo.ConsultarDevolucaoVeiculoFragment"
+        android:label="@string/devolver_veículo"
+        tools:layout="@layout/fragment_consultar_devolucao_veiculo" />
+    <fragment
+        android:id="@+id/nav_consulta_cliente"
+        android:name="com.example.myapplication_arthur.ui.consultarCliente.ConsultarClienteFragment"
+        android:label="Ver Clientes Cadastrados"
+        tools:layout="@layout/fragment_consultar_cliente"/>
+    <fragment
+        android:id="@+id/nav_alugar_veiculo_inicial"
+        android:name="com.example.myapplication_arthur.ui.alugarCarroInicial.AlugarCarroInicialFragment"
+        android:label="Alugar Veiculo"
+        tools:layout="@layout/fragment_alugar_carro_inicial"/>
+
+    <fragment
+        android:id="@+id/nav_consulta_veiculo"
+        android:name="com.example.myapplication_arthur.ui.consultarVeiculo.ConsultarVeiculoFragment"
+        android:label="Ver Veiculos Cadastrados"
+        tools:layout="@layout/fragment_consultar_veiculo" />
+    <fragment
+        android:id="@+id/nav_manutencao_alugar_veiculo"
+        android:name="com.example.myapplication_arthur.ui.alugarCarro.AlugarCarroFragment"
+        android:label="Alugar Veículo"
+        tools:layout="@layout/fragment_alugar_carro" />
+
+    <fragment
+        android:id="@+id/nav_manutencao_devolucao_veiculo"
+        android:name="com.example.myapplication_arthur.ui.devolucaoVeiculo.DevolucaoVeiculoFragment"
+        android:label="Devolução Veículo"
+        tools:layout="@layout/fragment_devolucao_veiculo"/>
+
+</navigation>
